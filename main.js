@@ -16,7 +16,6 @@ scene.add(light);
 
 /* Texture */
 const texture = new THREE.TextureLoader().load('./images/diamond_ore.png')
-const bump = new THREE.TextureLoader().load('./images/diamond_ore_dis.png')
 
 /* Material */
 let material_counter = 0;
@@ -25,10 +24,6 @@ let material = [
     new THREE.MeshStandardMaterial({ map:texture }),
     new THREE.MeshPhongMaterial({ map:texture })
 ];
-
-material[0].bumpMap = bump;
-material[1].bumpMap = bump;
-material[2].bumpMap = bump;
 
 /* Cube */
 const cube_geometry = new THREE.BoxGeometry();
