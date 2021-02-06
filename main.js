@@ -90,7 +90,7 @@ let onMouseUp = () => {
     if (material_counter >= 2) {
         material_counter = 0
     } else material_counter += 1;
-    console.log(material_counter);
+    //console.log(material_counter);
     cube.material = material[material_counter];
     cylinder.material = material[material_counter];
     dodecahedron.material = material[material_counter];
